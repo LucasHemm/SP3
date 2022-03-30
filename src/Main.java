@@ -4,5 +4,6 @@ public class Main {
 
         System.out.println("Start to SP3");
 
+        System.out.println("github check");
     }
 }
