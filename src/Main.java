@@ -6,5 +6,7 @@ public class Main {
 
         System.out.println("github check");
         System.out.println("Check 2");
+
+        System.out.println("Lad os se om det virker");
     }
 }
