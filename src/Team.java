@@ -7,7 +7,7 @@ public class Team {
     private int numberOfPoints = 0;
     private int goalDifference = 0;
     ArrayList<Player> teamPlayers;
-    TextUI textUI = new SysTextUI;
+    TextUI textUI = new TextUI;
 
     public Team(String teamName, int numberOfPlayers){
         this.teamName = teamName;
