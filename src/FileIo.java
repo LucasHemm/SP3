@@ -3,7 +3,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class FileIo {
+public class FileIo{
 
     public void saveTeamData(ArrayList<Team> data ) {
         StringBuilder gameData = new StringBuilder("Name, Number of players\n");

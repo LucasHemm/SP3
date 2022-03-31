@@ -55,4 +55,9 @@ public class Team {
         return names;
     }
 
+    @Override
+    public String toString(){
+        return this.teamName;
+    }
+
 }

@@ -28,4 +28,12 @@ public class Match {
     public String getDateAndTime() {
         return date + time;
     }
+
+
+    @Override
+    public String toString(){
+
+        return "" +  team1 + " versus " +  team2 + ", " + date + ", " + time + ", " + result;
+    }
+
 }
