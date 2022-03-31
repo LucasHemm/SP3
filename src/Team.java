@@ -9,21 +9,19 @@ public class Team {
     ArrayList<Player> teamPlayers;
     TextUI textUI = new SysTextUI;
 
-    public Team() {
-    }
-
-    public int getNumberOfPlayers(){
-        return numberOfPlayers;
-    }
-    public void registerTeam(String teamName, int numberOfPlayers){
+    public Team(String teamName, int numberOfPlayers){
         this.teamName = teamName;
         this.numberOfPlayers = numberOfPlayers;
 
         for(int i = 0; i < numberOfPlayers;i++){
-            Player p = new Player(textUI.get);
+            System.out.println("Write player name: ");
+            Player p = new Player(textUI.get());
             teamPlayers.add(p);
         }
+    }
 
+    public int getNumberOfPlayers(){
+        return numberOfPlayers;
     }
 
 
@@ -46,4 +44,13 @@ public class Team {
     public int getGoalDifference(){
         return this.goalDifference;
     }
+
+    public String getTeamPlayerNames(){
+        String names = "";
+        for(Player c : teamPlayers){
+            names = c.getName();
+        }
+        return names;
+    }
+
 }
