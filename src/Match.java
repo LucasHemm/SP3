@@ -33,7 +33,7 @@ public class Match {
     @Override
     public String toString(){
 
-        return "" +  team1 + " versus " +  team2 + ", " + date + ", " + time + ", " + result;
+        return "" +  team1 + ", versus, " +  team2 + ", " + date + ", " + time + ", " + result;
     }
 
 }

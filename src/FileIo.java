@@ -5,10 +5,12 @@ import java.util.ArrayList;
 
 public class FileIo{
 
-    public void saveTeamData(ArrayList<Team> data ) {
-        StringBuilder gameData = new StringBuilder("Name, Number of players\n");
+    public void saveTeamData(ArrayList<Team> data ){
+        StringBuilder gameData = new StringBuilder("Name, Number of players, Points, Goal difference, Player names\n");
         for(Team t: data) {
-            gameData.append(t.getName()+", "+t.getNumberOfPlayers()+t.getTeamPlayerNames()"\n");
+            gameData.append(t.getTeamName()+", "+t.getNumberOfPlayers()+
+                             ", " + t.getNumberOfPoints()+", " + t.getGoalDifference()
+                             + ", " + t.getTeamPlayerNames()+"\n");
         }
 
         try {
@@ -23,9 +25,9 @@ public class FileIo{
     }
 
     public void saveGameData(ArrayList<Match> data ) {
-        StringBuilder gameData = new StringBuilder("Match, Team-1, Team-2, Date, Time, Result\n");
+        StringBuilder gameData = new StringBuilder("Team-1, Team-2, Date, Time, Result\n");
         for(Match m: data) {
-            gameData.append(m.getMatch()+m.getResult()+"\n");
+            gameData.append(m+"\n");
         }
 
         try {
