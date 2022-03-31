@@ -8,5 +8,6 @@ public class Main {
         System.out.println("Check 2");
 
         System.out.println("Lad os se om det virker");
+        System.out.println("Hello world");
     }
 }
