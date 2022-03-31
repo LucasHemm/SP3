@@ -40,7 +40,6 @@ Team : +int getGoalDifference()
 Match : -Arraylist<Team> teams
 Match : +void createMatch(Team team1, Team team2, String date, String time)
 Match : +Arraylist<Team> getTeams()
-Main *--Tournament
 
 Tournament : -Arraylist<Match> matches
 Tournament : -Arraylist<String> results
@@ -49,6 +48,8 @@ Tournament : + void registerResult(int index, int numberOfGoals1, int numberOfGo
 Tournament : +String getResult(int index)
 Tournament : +teamRanking()
 Tournament : +Arraylist<Match> getMatches()
+
+Main *--Tournament
 
 IFileIO <|-- FileIO
 IFileIO <|-- dataBase
