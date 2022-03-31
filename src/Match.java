@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import textui.TextUI;
+import textui.SysTextUI;
 
 public class Match {
 
@@ -7,7 +8,7 @@ public class Match {
     public ArrayList<Match> matches = new ArrayList();
     String date;
     String time;
-    TextUI textUI = new TextUI;
+    TextUI textUI = new SysTextUI();
 
 
     public Match(String date, String time) {

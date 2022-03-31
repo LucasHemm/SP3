@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import textui.TextUI;
+import textui.SysTextUI;
 
 public class Team {
 
@@ -7,7 +9,7 @@ public class Team {
     private int numberOfPoints = 0;
     private int goalDifference = 0;
     ArrayList<Player> teamPlayers;
-    TextUI textUI = new TextUI;
+    TextUI textUI = new SysTextUI();
 
     public Team(String teamName, int numberOfPlayers){
         this.teamName = teamName;
