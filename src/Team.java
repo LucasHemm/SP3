@@ -4,23 +4,26 @@ public class Team {
 
     private String teamName;
     private int numberOfPlayers;
-    private int numberOfPoints;
-    private int goalDifference;
+    private int numberOfPoints = 0;
+    private int goalDifference = 0;
     ArrayList<Player> teamPlayers;
+    TextUI textUI = new SysTextUI;
 
-    public Team(String teamName, int numberOfPlayers, int numberOfPoints, int goalDifference) {
-        this.teamName = teamName;
-        this.numberOfPlayers = numberOfPlayers;
-        this.numberOfPoints = numberOfPoints;
-        this.goalDifference = goalDifference;
+    public Team() {
     }
 
     public int getNumberOfPlayers(){
         return numberOfPlayers;
     }
-    void registerTeam(String teamName, int numberOfPlayers){
+    public void registerTeam(String teamName, int numberOfPlayers){
         this.teamName = teamName;
-        this.numberOfPoints = numberOfPlayers;
+        this.numberOfPlayers = numberOfPlayers;
+
+        for(int i = 0; i < numberOfPlayers;i++){
+            Player p = new Player(textUI.get);
+            teamPlayers.add(p);
+        }
+
     }
 
 
